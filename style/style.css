@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap");
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgb(55, 60, 66);
+  background-color: rgb(215, 215, 215);
+  margin: 5rem 14rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+body .lastName, body .firstName {
+  font-family: "Montserrat", sans-serif;
+}
+body .lastName {
+  font-weight: 500;
+}
+body .firstName {
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+.icon--small {
+  font-size: 0.8rem;
+}
+.icon--margin {
+  margin-left: 0.5rem;
+}
+.icon--padding-1 {
+  padding: 0 1.35rem 0 0.1rem;
+}
+.icon--padding-2 {
+  padding: 0 1.185rem 0 0.1rem;
+}
+.icon--yellow {
+  color: rgb(253, 199, 5);
+}
+.icon--black {
+  color: rgb(55, 60, 66);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1.275fr;
+  padding-left: 2rem;
+  background-color: #ffffff;
+}
+.main .title {
+  text-transform: uppercase;
+}
+.main p {
+  margin-top: 0;
+}
+.main h2 {
+  line-height: 0;
+}
+.main .progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.header {
+  background-color: #ffffff;
+}
+.header p {
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.header p .lastName {
+  color: rgb(253, 199, 5);
+}
+.header p .firstName, .header p .lastName {
+  font-size: 2.25rem;
+}
+.header p .firstName, .header p .profession {
+  color: rgb(55, 60, 66);
+}
+.header p .profession {
+  text-transform: none;
+  font-size: 1.875rem;
+}
+.header__profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(253, 199, 5);
+}
+.header__profil .border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.header__profil .border--1 {
+  background-color: #ffffff;
+  height: 14.5rem;
+  width: 14.5rem;
+}
+.header__profil .border--2 {
+  background-color: rgb(253, 199, 5);
+  height: 13.5rem;
+  width: 13.5rem;
+}
+.header__profil .image {
+  object-fit: cover;
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+  border: 0.5rem solid #ffffff;
+}
+.header--marge {
+  padding: 3rem 0 1rem 0;
+}
+.header--small-marge {
+  padding: 2.35rem 0;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #ffffff;
+  padding: 0;
+  margin-bottom: 3rem;
+  background-color: rgb(43, 48, 54);
+}
+.main-content .title--pretty {
+  background-color: rgb(55, 60, 66);
+}
+.main-content .education__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.main-content .experience__content {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.main-content .experience__content .label {
+  color: #000000;
+  border-radius: 0.313rem;
+  padding: 0.2rem 1rem;
+  background-color: rgb(253, 199, 5);
+}
+.main-content .skills__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+}
+.main-content .education {
+  padding-top: 3rem;
+}
+.main-content .education__content, .main-content .experience__content, .main-content .skills__content {
+  padding: 0 3.2rem;
+}
+
+.secondary-content {
+  padding: 0;
+}
+.secondary-content .bg {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.secondary-content .title--pretty {
+  background-color: rgb(241, 241, 241);
+}
+.secondary-content .about__content span {
+  font-weight: 600;
+  background-color: rgb(253, 199, 5);
+}
+.secondary-content .contact__content .phone-number h5 {
+  margin-top: 0;
+}
+.secondary-content .contact__content .phone-number span {
+  font-size: 0.9rem;
+}
+.secondary-content .contact__content .phone-number h5, .secondary-content .contact__content .email h5 {
+  margin-bottom: 0;
+}
+.secondary-content .hobbies__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.secondary-content .langage__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-bottom: 2rem !important;
+}
+.secondary-content .langage__content h4 {
+  margin: 0;
+}
+.secondary-content .about {
+  padding-top: 3rem;
+}
+.secondary-content .about__content, .secondary-content .contact__content, .secondary-content .hobbies__content, .secondary-content .langage__content {
+  padding: 1.25rem 3rem;
+}
+.secondary-content .end-block {
+  height: 3rem;
+  background-color: rgb(253, 199, 5);
+}
+
+/*# sourceMappingURL=style.css.map */

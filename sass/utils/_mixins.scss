@@ -1,0 +1,9 @@
+@mixin pseudo-element ($height, $width, $top, $right, $bgColor) {
+    content: "";
+    position: absolute;
+    height: $height;
+    width: $width;
+    top: $top;
+    right: $right;
+    background-color: $bgColor;
+}

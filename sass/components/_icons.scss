@@ -1,0 +1,23 @@
+.icon {
+    font-size: 1.5rem;
+    &--small {
+        font-size: .8rem;
+    }
+    &--margin {
+        margin-left: .5rem;
+    }
+    &--padding {
+        &-1 {
+            padding: 0 1.35rem 0 .1rem;
+        }
+        &-2 {
+            padding: 0 1.185rem 0 .1rem;
+        }
+    }
+    &--yellow {
+        color: $colorSecondary;
+    }
+    &--black {
+        color: $colorQuaternary;
+    }
+}

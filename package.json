@@ -1,0 +1,23 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./style/style.css",
+    "prefix": "postcss ./style/style.css --use autoprefixer -d ./style/prefixed/"
+  },
+  "browserslist": "last 4 versions",
+  "keywords": [],
+  "author": "Wilfried Prombo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilfriedProm/MyProfessionalCV.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WilfriedProm/MyProfessionalCV/issues"
+  },
+  "homepage": "https://github.com/WilfriedProm/MyProfessionalCV#readme"
+}

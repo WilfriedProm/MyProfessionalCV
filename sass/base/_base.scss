@@ -1,0 +1,9 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: $colorQuaternary;
+    background-color: $colorPrimary;
+    margin: 5rem 14rem;
+}

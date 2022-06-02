@@ -1,0 +1,190 @@
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1.275fr;
+    padding-left: 2rem;
+    background-color: #ffffff;
+    & .title {
+        text-transform: uppercase;
+    }
+    & p {
+        margin-top: 0;
+    }
+    & h2 {
+        line-height: 0;
+    }
+    & .progress {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: .8rem;
+    }
+}
+
+.header {
+    background-color: #ffffff;
+    & p {
+        text-transform: uppercase;
+        line-height: 1.5;
+        & .lastName {
+            color: $colorSecondary;
+        }
+        & .firstName, .lastName {
+            font-size: map-get($map: $fontSize, $key: title);
+        }
+        & .firstName, .profession {
+            color: $colorQuaternary;
+        }
+        & .profession {
+            text-transform: none;
+            font-size: calc(map-get($map: $fontSize, $key: title) - .375rem);
+        }
+    }
+    &__profil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colorSecondary;
+        & .border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            &--1 {
+                background-color: #ffffff;
+                height: 14.5rem;
+                width: 14.5rem;
+            }
+            &--2 {
+                background-color: $colorSecondary;
+                height: 13.5rem;
+                width: 13.5rem;
+            }
+        }
+        & .image {
+            object-fit: cover;
+            height: 12.5rem;
+            width: 12.5rem;
+            border-radius: 50%;
+            border: .5rem solid #ffffff;
+        }
+    }
+    &--marge {
+        padding: 3rem 0 1rem 0;
+    }
+    &--small-marge {
+        padding: 2.35rem 0;
+    }
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #ffffff;
+    padding: 0;
+    margin-bottom: 3rem;
+    background-color: $colorTertiary;
+    & .title {
+        &--pretty {
+            background-color: $colorQuaternary;
+        }
+    }
+    & .education {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    & .experience {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            & .label {
+                color: #000000;
+                border-radius: 0.313rem;
+                padding: .2rem 1rem;
+                background-color: $colorSecondary;
+            }
+        }
+    }
+    & .skills {
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 3rem;
+        }
+    }
+    & .education {
+        padding-top: 3rem;
+    }
+    & .education__content, .experience__content, .skills__content {
+        padding: 0 3.2rem;
+    }
+}
+
+.secondary-content {
+    padding: 0;
+    & .bg {
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    & .title {
+        &--pretty {
+            background-color: $colorQuinary;
+        }
+    }
+    & .about {
+        &__content {
+            & span {
+                font-weight: 600;
+                background-color: $colorSecondary;
+            }
+        }
+    }
+    & .contact {
+        &__content {
+            & .phone-number {
+                & h5 {
+                    margin-top: 0;
+                }
+                & span {
+                    font-size: .9rem;
+                }
+            }
+            & .phone-number, .email {
+                & h5 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    & .hobbies {
+        &__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    & .langage {
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-bottom: 2rem !important;
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+    & .about{
+        padding-top: 3rem;
+    }
+    & .about__content, .contact__content, .hobbies__content, .langage__content{
+        padding: 1.25rem 3rem;
+    }
+    & .end-block {
+        height: 3rem;
+        background-color: $colorSecondary;
+    }
+}
